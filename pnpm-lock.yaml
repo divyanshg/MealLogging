@@ -1,7 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  atob: ^2.1.2
   bcryptjs: ^2.4.3
+  btoa: ^1.2.1
   dotenv: ^16.0.3
   express: ^4.18.1
   jsonwebtoken: ^8.5.1
@@ -9,7 +11,9 @@ specifiers:
   uuid: ^9.0.0
 
 dependencies:
+  atob: 2.1.2
   bcryptjs: 2.4.3
+  btoa: 1.2.1
   express: 4.18.1
   jsonwebtoken: 8.5.1
   mongoose: 6.6.3
@@ -47,6 +51,12 @@ packages:
     resolution: {integrity: sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==}
     dev: false
 
+  /atob/2.1.2:
+    resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
+    engines: {node: '>= 4.5.0'}
+    hasBin: true
+    dev: false
+
   /base64-js/1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: false
@@ -80,6 +90,12 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       buffer: 5.7.1
+    dev: false
+
+  /btoa/1.2.1:
+    resolution: {integrity: sha512-SB4/MIGlsiVkMcHmT+pSmIPoNDoHg+7cMzmt3Uxt628MTz2487DKSqK/fuhFBrkuqrYv5UCEnACpF4dTFNKc/g==}
+    engines: {node: '>= 0.4.0'}
+    hasBin: true
     dev: false
 
   /buffer-equal-constant-time/1.0.1:

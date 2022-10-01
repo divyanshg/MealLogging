@@ -1,9 +1,10 @@
 // Import the mongoose module
 const mongoose = require("mongoose");
+const atob = require("atob");
 
 module.exports = function() {
   // Set up default mongoose connection
-  const mongoDB = process.env.DB_URI;
+  const mongoDB = atob(process.env.DB_URI);
   mongoose.connect(mongoDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
